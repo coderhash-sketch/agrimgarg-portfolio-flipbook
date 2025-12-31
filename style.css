@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Poppins",sans-serif;
+}
+
+:root{
+--bg-color:#eaf6ff;
+--main-color:#4fb3ff;
+--text-color:#1f2933;
+--pages-color:linear-gradient(90deg,#ffffff,#f2f9ff);
+--border:0.12rem solid #4fb3ff;
+--box-shadow:0 8px 25px rgba(79,179,255,0.25);
+}
+
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+background:var(--bg-color);
+overflow:hidden;
+}
+
+.wrapper{
+width:66rem;
+height:45rem;
+perspective:250rem;
+}
+
+.book-page{
+background:var(--pages-color);
+padding:2rem;
+}
+
+.profile-page{
+text-align:center;
+}
+
+.profile-page img{
+width:180px;
+height:220px;
+object-fit:cover;
+border-radius:0.7rem;
+box-shadow:var(--box-shadow);
+transition:0.35s;
+}
+
+.profile-page img:hover{
+transform:translateY(-6px) scale(1.03);
+}
+
+.profile-intro{
+margin-top:1rem;
+font-size:0.95rem;
+line-height:1.6;
+color:#2b4a66;
+max-width:90%;
+}
+
+.social-media a{
+font-size:1.6rem;
+margin:0.4rem;
+color:var(--main-color);
+}
+
+.btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:9rem;
+height:3rem;
+background:var(--main-color);
+color:white;
+border-radius:0.4rem;
+margin:0.5rem;
+text-decoration:none;
+}
+
+.services-content,
+.skill-content{
+border:var(--border);
+border-radius:0.5rem;
+padding:0.7rem;
+margin:0.4rem 0;
+}
+
+.coding-links{
+text-align:center;
+margin-top:1rem;
+}
